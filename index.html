@@ -3,14 +3,32 @@
   <head>
     <meta charset="UTF-8">
     <title>Playground - JavaScript 101</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   </head>
   <body>
-    <p style="margin-top: 40vh; text-align: center; font: normal 24px monospace;">
-      Open the console 🤓
-    </p>
+    <div class="container">
+      <h1>HTTP & AJAX</h1>
+      <hr>
 
-    <!-- Add some HTML in here -->
+      <button id="click-me">Click this button!</button>
 
+      <hr>
+
+      <h3>Movie Search with OMDb (GET Request)</h3>
+      <form id="search-movies" class="form-inline my-4">
+        <input id="keyword" type="text" class="form-control ml-auto mr-2" placeholder="Find movies">
+        <input type="submit" class="btn btn-primary mr-auto ml-2" value="Search">
+      </form>
+
+      <div class="container text-center">
+        <ul id="movies" class="list-inline"></ul>
+      </div>
+
+      <hr>
+
+      <h3>Algolia Places Search (POST Request)</h3>
+      <input type="text" id="search">
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
